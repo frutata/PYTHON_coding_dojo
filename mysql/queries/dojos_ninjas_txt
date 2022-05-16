@@ -1,0 +1,30 @@
+SELECT * FROM dojos
+
+INSERT INTO dojos (name)
+VALUES ("Black"), ("Yellow"), ("Red");
+
+DELETE FROM dojos
+WHERE id = 1;
+WHERE id = 2;
+WHERE id = 3;
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id, created_at)
+VALUES ("JP", "Pacheco", "2000-11-19", 1, NOW()), ("Kelly", "C", "2001-03-27", 1, NOW()), ("Tyler", "A", "2003-09-29", 1, NOW());
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id, created_at)
+VALUES ("Barry", "Benson", "2010-01-20", 2, NOW()), ("Austin", "P", "1995-10-05", 2, NOW()), ("Stevie", "P", "2016-11-07", 2, NOW());
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id, created_at)
+VALUES ("Larry", "C", "1990-04-03", 3, NOW()), ("Dwayne", "J", "1980-05-10", 3, NOW()), ("Percy", "J", "2000-10-11", 3, NOW());
+
+SELECT *
+FROM ninjas
+WHERE dojo_id = 1;
+
+SELECT *
+FROM ninjas
+WHERE dojo_id = 3;
+
+SELECT *
+FROM dojos
+WHERE id = 3;

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+</head>
+<body>
+    
+    <button><a href="/dashboard">Dashboard</a></button>
+
+    <button><a href="/logout">Logout</a></button>
+
+    <h1>Welcome, {{ user.first_name }}</h1>
+
+    <h2>{{ recipe.name }}</h2>
+    
+    <p>Description: {{ recipe.description }}</p>
+    <p>Instructions: {{ recipe.instruction }}</p>
+    <p>Date Made: {{ recipe.date_made_on }}</p>
+
+</body>
+</html>

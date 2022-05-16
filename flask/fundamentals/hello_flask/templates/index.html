@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flex{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+        }
+        .content{
+            min-height: 300px;
+            min-width: 300px;
+            border: 5px solid black;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex">
+        {% for i in range(0, num) %}
+        <div class="content" style="background-color: {{color}};"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>

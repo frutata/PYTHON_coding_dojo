@@ -1,0 +1,23 @@
+/* .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    min-height: 100px;
+    min-width: 100px;
+} */
+
+.color1{
+    background-color: red;
+}
+
+.color2{
+    background-color: black;
+}
+
+table tr td{
+    height: 50px;
+    width: 50px;
+}

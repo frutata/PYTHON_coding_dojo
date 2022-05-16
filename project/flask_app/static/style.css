@@ -1,0 +1,107 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Defaults */
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.marginTop {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marginBot {
+    margin-bottom: 20px;
+}
+
+.padding {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.big {
+    font-weight: bold;
+    font-size: large;
+}
+
+.cen {
+    text-align: center;
+}
+
+/* LOGIN */
+
+.btn {
+    height: 35px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+}
+
+.btn2 {
+    height: 20px;
+    width: 75px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.login {
+    background-color: #89cff0;
+}
+
+.divide {
+    background-color: black;
+    height: 2px;
+}
+
+.logTitle {
+    font-size: 35px;
+    font-weight: bold;
+    min-width: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* UNIVERSAL */
+
+.banner {
+    background-color: #333333;
+    justify-content: space-between;
+    color: #ff4655;
+}

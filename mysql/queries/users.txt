@@ -1,0 +1,29 @@
+SELECT * FROM users
+
+INSERT INTO users (first_name, last_name, email)
+VALUES ("JP", "Pacheco", "jp@gmail.com");
+VALUES ("Kelly", "C", "kca@gmail.com");
+VALUES ("Tyler", "A", "ta@gmail.com");
+
+SELECT *
+FROM users
+WHERE email LIKE "%jp@gmail.com";
+
+SELECT *
+FROM users
+WHERE id LIKE 15;
+
+UPDATE users_schema.users SET
+last_name = "Pancakes"
+WHERE id = 15;
+
+DELETE FROM users
+WHERE id = 14
+
+SELECT *
+FROM users
+ORDER BY first_name;
+
+SELECT *
+FROM users
+ORDER BY first_name DESC;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkerboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <table>
+        {% for i in range(num): %}
+            <tr>
+                {% for j in range(8): %}
+                <td class='color{{ (i+j)%2+1 }}'></td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+
+
+
+    <!-- what i tried before watching the video -->
+    
+<!--<div class="flex">
+        {% for i in range(4) %}
+        <div class="content black"></div>
+        <div class="content red"></div>
+        {% endfor %}
+    </div>
+    <div class="flex">
+        {% for i in range(4) %}
+        <div class="content red"></div>
+        <div class="content black"></div>
+        {% endfor %}
+    </div>
+    <div class="flex">
+        {% for i in range(4) %}
+        <div class="content black"></div>
+        <div class="content red"></div>
+        {% endfor %}
+    </div>
+    <div class="flex">
+        {% for i in range(4) %}
+        <div class="content red"></div>
+        <div class="content black"></div>
+        {% endfor %}
+    </div>
+    <div class="flex">
+        {% for i in range(4) %}
+        <div class="content black"></div>
+        <div class="content red"></div>
+        {% endfor %}
+    </div>
+    <div class="flex">
+        {% for i in range(4) %}
+        <div class="content red"></div>
+        <div class="content black"></div>
+        {% endfor %}
+    </div>
+    <div class="flex">
+        {% for i in range(4) %}
+        <div class="content black"></div>
+        <div class="content red"></div>
+        {% endfor %}
+    </div>
+    <div class="flex">
+        {% for i in range(4) %}
+        <div class="content red"></div>
+        <div class="content black"></div>
+        {% endfor %}
+    </div> -->
+</body>
+</html>

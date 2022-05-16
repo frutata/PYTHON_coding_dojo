@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="flex padding banner">
+
+        <div>
+            <h1>Hello {{ user.username }}</h1>
+        </div>
+
+        <div>
+            <h1>VG</h1>
+        </div>
+
+        <div class="flex gap">
+            <h2><button class="btn2">settings</button></h2>
+            <h1><button class="btn"><a href="/logout">LOGOUT</a></button></h1>
+        </div>
+        
+    </div>
+
+</body>
+</html>
